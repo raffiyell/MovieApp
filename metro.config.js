@@ -4,6 +4,9 @@
  *
  * @format
  */
+// vue.config.js
+
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   transformer: {
@@ -14,4 +17,12 @@ module.exports = {
       },
     }),
   },
+
+ /* configureWebpack: {
+    plugins: [
+      new BundleAnalyzerPlugin({
+        analyzerPort: process.env.VUE_CLI_MODERN_BUILD ? 8888 : 9999 // Prevents build errors when running --modern
+      })
+    ]
+  }*/
 };
